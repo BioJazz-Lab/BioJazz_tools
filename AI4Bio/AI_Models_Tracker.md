@@ -1,6 +1,6 @@
 # AI Models for BioJazz Lab
 
-**Maintained by:** Song Feng Lab, Department of Biology, Baylor University  
+**Maintained by:** BioJazz Lab, Department of Biology, Baylor University  
 **Last updated:** 2026-10-26  
 **Purpose:** Track AI/ML models relevant to BioJazz Lab research — phage-host interactions, genome-scale metabolic modeling, PTM-driven biomolecular assembly, and multi-scale eco-evolutionary dynamics.
 
