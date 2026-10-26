@@ -72,6 +72,7 @@
 
 | Model | Description | Access | Notes |
 |-------|-------------|--------|-------|
+| **ConforNets** | Latent-based conformational control built on OpenFold3; generates and steers protein conformational ensembles | [GitHub](https://github.com/aqlaboratory/confornets) / [arXiv](https://arxiv.org/abs/2604.18559) | From aqlaboratory (OpenFold3 team); 2026 |
 | **BioEmu2** | Microsoft generative model for protein equilibrium conformational ensemble emulation | [GitHub](https://github.com/microsoft/bioemu) / [HuggingFace](https://huggingface.co/microsoft/bioemu2) | Replaces costly MD simulations for ensemble generation; thermodynamically grounded |
 | **yesint/molar** | Rust + Python library for high-performance reading and analysis of MD trajectories | [GitHub](https://github.com/yesint/molar) / [Docs](https://docs.rs/molar) | Supports GROMACS, AMBER formats; fast alternative to MDAnalysis for large trajectories |
 | **David-OConnor/dynamics** | Rust-based molecular dynamics simulation engine | [GitHub](https://github.com/David-OConnor/dynamics) / [Docs](https://docs.rs/dynamics) | Lightweight MD library; useful for custom simulation workflows |
