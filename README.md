@@ -60,6 +60,7 @@
 | **RoseTTAFold2 / RoseTTAFold-All-Atom** | Structure prediction; supports small molecules | [GitHub](https://github.com/uw-ipd/RoseTTAFold2) | Handles non-protein atoms well |
 | **ProteinMPNN** | Inverse folding / sequence design from backbone | [GitHub](https://github.com/dauparas/ProteinMPNN) | Useful for engineering phage tail fibers or enzymes |
 | **SaProt** | Structure-aware protein language model | [GitHub](https://github.com/westlake-realerc/SaProt) | Combines sequence + structure tokens |
+| **RFD4-Proteina** | Generative diffusion model for de novo protein design (NVIDIA + UW Institute for Protein Design; successor to RFDiffusion) | [HuggingFace](https://huggingface.co/nvidia/RFD4-Proteina) / [NVIDIA NIM](https://build.nvidia.com/ipd/rfd4-proteina) | 2026; open-weight; state-of-the-art backbone design |
 | **se3_diffusion (FrameDiff)** | SE(3) diffusion model for de novo protein backbone generation | [GitHub](https://github.com/jasonkyuyim/se3_diffusion) | Generates diverse backbone scaffolds; ICML 2023 |
 | **RigidSSL** | Rigidity-aware geometric pretraining for protein design and conformational ensembles | [GitHub](https://github.com/ZhanghanNi/RigidSSL) / [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008912) | SSL using rigid body augmentation; improves design and ensemble prediction |
 | **FoldDisco** | Ultra-fast discontinuous structural motif search across the protein universe | [GitHub](https://github.com/steineggerlab/folddisco) | From Steinegger lab; indexes and queries billions of structures |
