@@ -9,13 +9,16 @@
 ## Table of Contents
 
 1. [Virtual Cell & Cell Simulation](#virtual-cell--cell-simulation)
-2. [Protein Structure & Function](#protein-structure--function)
-3. [Genomics & Metagenomics](#genomics--metagenomics)
-4. [Metabolic Modeling & Systems Biology](#metabolic-modeling--systems-biology)
-5. [Phage Biology & Viromics](#phage-biology--viromics)
-6. [Multi-omics & Proteomics](#multi-omics--proteomics)
-7. [Scientific Literature & Knowledge Retrieval](#scientific-literature--knowledge-retrieval)
-8. [General-Purpose LLMs for Biology](#general-purpose-llms-for-biology)
+2. [Protein Structure Prediction](#protein-structure-prediction)
+3. [Molecular Dynamics & Conformational Sampling](#molecular-dynamics--conformational-sampling)
+4. [Protein-Ligand Docking & Binding Affinity](#protein-ligand-docking--binding-affinity)
+5. [Genomics & Metagenomics](#genomics--metagenomics)
+6. [Metabolic Modeling & Systems Biology](#metabolic-modeling--systems-biology)
+7. [Phage Biology & Viromics](#phage-biology--viromics)
+8. [Multi-omics & Proteomics](#multi-omics--proteomics)
+9. [Scientific Literature & Knowledge Retrieval](#scientific-literature--knowledge-retrieval)
+10. [General-Purpose LLMs for Biology](#general-purpose-llms-for-biology)
+11. [Computational Tools & Algorithms](#computational-tools--algorithms)
 
 ---
 
@@ -43,21 +46,45 @@
 
 ---
 
-## Protein Structure & Function
+## Protein Structure Prediction
 
 | Model | Description | Access | Notes |
 |-------|-------------|--------|-------|
 | **AlphaFold3** | Structure prediction for proteins, DNA, RNA, ligands, ions | [AlphaFold Server](https://alphafoldserver.com) / [GitHub](https://github.com/google-deepmind/alphafold3) | Best for single-chain and complex structures; supports PTMs |
 | **AlphaFold2** | Protein monomer/multimer structure prediction | [ColabFold](https://colab.research.google.com/github/sokrypton/ColabFold/) / [GitHub](https://github.com/google-deepmind/alphafold) | Production-grade; ColabFold is fast alternative |
+| **OpenFold3** | Open-source community reimplementation of AlphaFold3 (permissive license) | [GitHub](https://github.com/aqlaboratory/openfold) | Enables training and fine-tuning; basis for AQAffinity |
+| **RomeroLab/lightning-boltz** | PyTorch Lightning training framework for Boltz-1/2; biomolecular structure prediction | [GitHub](https://github.com/RomeroLab/lightning-boltz) | MIT-licensed; strong AlphaFold3 alternative for proteins, DNA, RNA, small molecules |
 | **ESM-2 / ESMFold** | Protein language model (650M–15B params); fast structure prediction | [GitHub](https://github.com/facebookresearch/esm) / [ESM Metagenomic Atlas](https://esmatlas.com) | Great for large-scale screening; no MSA needed |
 | **ESM-3** | Multimodal protein model (sequence, structure, function) | [GitHub](https://github.com/evolutionaryscale/esm) | Supports conditional generation; useful for design |
 | **ProtTrans (ProtBERT, ProtT5)** | Protein sequence embeddings via transformer | [GitHub](https://github.com/ProtTrans/ProtTrans) / [HuggingFace](https://huggingface.co/Rostlab) | Good for representation learning; classification tasks |
 | **RoseTTAFold2 / RoseTTAFold-All-Atom** | Structure prediction; supports small molecules | [GitHub](https://github.com/uw-ipd/RoseTTAFold2) | Handles non-protein atoms well |
-| **DiffDock** | Diffusion-based protein–ligand docking | [GitHub](https://github.com/gcorso/DiffDock) | Relevant for enzyme–metabolite interactions |
 | **ProteinMPNN** | Inverse folding / sequence design from backbone | [GitHub](https://github.com/dauparas/ProteinMPNN) | Useful for engineering phage tail fibers or enzymes |
 | **SaProt** | Structure-aware protein language model | [GitHub](https://github.com/westlake-realerc/SaProt) | Combines sequence + structure tokens |
+| **se3_diffusion (FrameDiff)** | SE(3) diffusion model for de novo protein backbone generation | [GitHub](https://github.com/jasonkyuyim/se3_diffusion) | Generates diverse backbone scaffolds; ICML 2023 |
+| **RigidSSL** | Rigidity-aware geometric pretraining for protein design and conformational ensembles | [GitHub](https://github.com/ZhanghanNi/RigidSSL) / [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008912) | SSL using rigid body augmentation; improves design and ensemble prediction |
+| **FoldDisco** | Ultra-fast discontinuous structural motif search across the protein universe | [GitHub](https://github.com/steineggerlab/folddisco) | From Steinegger lab; indexes and queries billions of structures |
 | **PhosphoSitePlus ML tools** | PTM site prediction | [PhosphoSitePlus](https://www.phosphosite.org) | Relevant for PTM-driven assembly project |
 | **DeepPhos / NetPhos** | Phosphorylation site prediction | [NetPhos](https://services.healthtech.dtu.dk/services/NetPhos-3.1/) | Classical PTM prediction |
+
+---
+
+## Molecular Dynamics & Conformational Sampling
+
+| Model | Description | Access | Notes |
+|-------|-------------|--------|-------|
+| **BioEmu2** | Microsoft generative model for protein equilibrium conformational ensemble emulation | [GitHub](https://github.com/microsoft/bioemu) / [HuggingFace](https://huggingface.co/microsoft/bioemu2) | Replaces costly MD simulations for ensemble generation; thermodynamically grounded |
+| **yesint/molar** | Rust + Python library for high-performance reading and analysis of MD trajectories | [GitHub](https://github.com/yesint/molar) / [Docs](https://docs.rs/molar) | Supports GROMACS, AMBER formats; fast alternative to MDAnalysis for large trajectories |
+| **David-OConnor/dynamics** | Rust-based molecular dynamics simulation engine | [GitHub](https://github.com/David-OConnor/dynamics) / [Docs](https://docs.rs/dynamics) | Lightweight MD library; useful for custom simulation workflows |
+
+---
+
+## Protein-Ligand Docking & Binding Affinity
+
+| Model | Description | Access | Notes |
+|-------|-------------|--------|-------|
+| **DiffDock** | Diffusion-based protein–ligand docking | [GitHub](https://github.com/gcorso/DiffDock) | State-of-the-art blind docking; relevant for enzyme–metabolite interactions |
+| **DiffDock-Glide** | DiffDock pose sampling combined with Schrödinger Glide scoring for improved accuracy | [GitHub](https://github.com/gcorso/DiffDock) | Hybrid approach; Glide rescoring improves pose selection |
+| **AQAffinity** | Structure-free binding affinity prediction built on OpenFold3 (SandboxAQ) | [SandboxAQ](https://www.sandboxaq.com/aqaffinity) / [Docs](https://docs.aisim.sandboxaq.com/aqaffinity) | High-speed drug potency prediction without requiring a solved structure; 2026 |
 
 ---
 
@@ -70,6 +97,7 @@
 | **Evo** | DNA language model trained on prokaryote/phage genomes | [GitHub](https://github.com/EvolutionaryScale/evo) | Particularly relevant for phage-host research |
 | **HyenaDNA** | Long-range DNA model (up to 1M context) | [GitHub](https://github.com/HazyResearch/hyena-dna) | Long genomic context; efficient architecture |
 | **Caduceus** | Bidirectional, long-range DNA model | [GitHub](https://github.com/kuleshov-group/caduceus) | State-space model; strong on genomic benchmarks |
+| **MMseqs2** | Ultra-fast many-against-many protein/nucleotide sequence search and clustering | [GitHub](https://github.com/soedinglab/MMseqs2) | Essential for large-scale homology search and metagenomic annotation; orders of magnitude faster than BLAST |
 | **GenoME** | Metagenomic classification and embedding | — | Useful for microbiome studies |
 | **DeepMicro** | Deep learning for microbiome phenotype prediction | [GitHub](https://github.com/minoh0201/DeepMicro) | Relevant for eco-evolutionary microbiome work |
 
@@ -146,6 +174,14 @@
 | **Mistral / Mixtral** | Efficient open-weight models | [GitHub](https://github.com/mistralai/mistral-src) | Good for local/HPC deployment |
 | **BioMistral** | Mistral fine-tuned on biomedical literature | [HuggingFace](https://huggingface.co/BioMistral) | Biomedical QA and summarization |
 | **Med-PaLM 2** | Google's medical reasoning model | Research access only | Clinical reasoning benchmark leader |
+
+---
+
+## Computational Tools & Algorithms
+
+| Tool | Description | Access | Notes |
+|------|-------------|--------|-------|
+| **bigraph-rs** | Rust implementation of bigraph data structures (bigraphical reactive systems) | [GitHub](https://github.com/sebschmi/bigraph-rs) / [Docs](https://docs.rs/bigraph) | Formal graph model for concurrent biological systems; useful for network topology analysis |
 
 ---
 
