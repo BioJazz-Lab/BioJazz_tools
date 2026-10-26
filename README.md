@@ -1,4 +1,4 @@
-# AI Models for BioJazz Lab
+# AI Models and Modeling Tools for BioJazz Lab
 
 **Maintained by:** BioJazz Lab, Department of Biology, Baylor University  
 **Last updated:** 2026-10-26  
