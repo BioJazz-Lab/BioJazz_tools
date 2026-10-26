@@ -134,3 +134,27 @@
 ---
 
 *For questions or suggestions, contact Song Feng (song.zhimu.feng@gmail.com).*
+
+---
+
+## Virtual Cell & Cell Simulation
+
+| Model | Description | Access | Notes |
+|-------|-------------|--------|-------|
+| **scGPT** | Single-cell foundation model (33M cells pre-trained); cell type annotation, perturbation prediction, GRN inference | [GitHub](https://github.com/bowang-lab/scGPT) | Strong zero-shot generalization across tissues |
+| **Geneformer** | Transformer pre-trained on 30M single-cell profiles; in silico gene perturbations | [HuggingFace](https://huggingface.co/ctheodoris/Geneformer) | Predicts knockout effects without experiments |
+| **scFoundation** | Large-scale single-cell foundation model (100M+ cells) | [GitHub](https://github.com/biomap-research/scFoundation) | Strong cross-tissue and cross-condition generalization |
+| **UCE (Universal Cell Embeddings)** | Zero-shot single-cell embeddings; works across species without fine-tuning | [GitHub](https://github.com/snap-stanford/UCE) | Useful for cross-organism eco-evolutionary comparisons |
+| **GEARS** | Graph-based model for predicting single and combinatorial genetic perturbations | [GitHub](https://github.com/snap-stanford/GEARS) | Predicts unseen perturbation outcomes from sc data |
+| **CellOracle** | GRN inference + TF perturbation simulation from scRNA/scATAC | [GitHub](https://github.com/morris-lab/CellOracle) | Simulates cell fate changes; links GRN to cell identity |
+| **SCENIC / SCENIC+** | Gene regulatory network inference from scRNA-seq and scATAC-seq | [GitHub](https://github.com/aertslab/scenicplus) | SCENIC+ integrates chromatin accessibility for GRN |
+| **NicheNet** | Cell–cell communication via ligand–target inference | [GitHub](https://github.com/saeyslab/nichenetr) | Predicts intercellular signaling; relevant for phage-host and host–microbe contexts |
+| **CellChat** | Quantitative inference of cell–cell signaling networks at pathway level | [GitHub](https://github.com/sqjin/CellChat) | Complements NicheNet; good for microbial community signaling |
+| **scBERT** | BERT-based model for single-cell cell type annotation | [GitHub](https://github.com/TencentAILabHealthcare/scBERT) | Pre-trained on PanglaoDB |
+| **CellTypist** | Automated cell type classification with curated model zoo | [GitHub](https://github.com/Teichlab/celltypist) | Fast inference; many pre-built tissue models |
+| **AIDO.Cell** | AI-driven cell foundation model for multi-modal sequence-to-cell prediction | [GitHub](https://github.com/genbio-ai/AIDO) | Emerging; multi-task model spanning sequence to phenotype |
+| **Cell2Sentence** | Translates single-cell expression data to/from natural language via LLMs | [GitHub](https://github.com/vandijklab/cell2sentence-ft) | Bridges LLM reasoning with single-cell biology |
+| **Cellpose** | Deep learning segmentation of cells in 2D/3D images | [GitHub](https://github.com/MouseLand/cellpose) | Core tool for imaging-based phenomics and spatial omics |
+| **PhysiCell** | Agent-based multicellular simulation (mechanistic, not ML) | [GitHub](https://github.com/MathCancer/PhysiCell) | Integrates with ML outputs for whole-tissue spatial modeling |
+| **Virtual Cell (VCell)** | ODE/PDE/stochastic simulation of intracellular dynamics with spatial support | [vcell.org](https://vcell.org) | NRBSC platform; useful for mechanistic signaling models |
+| **BioNetGen / PyBNG** | Rule-based modeling of biochemical reaction networks | [GitHub](https://github.com/RuleWorld/bionetgen) | Signaling network simulation; pairs well with parameter estimation tools (cf. pyModEst) |
