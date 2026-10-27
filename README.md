@@ -10,7 +10,7 @@
 
 1. [Protein Modeling & Design](#protein-modeling--design)
 2. [Molecular Dynamics & Conformational Sampling](#molecular-dynamics--conformational-sampling)
-3. [Protein-Ligand Docking & Binding Affinity](#protein-ligand-docking--binding-affinity)
+3. [Molecular Docking & Binding Affinity](#molecular-docking--binding-affinity)
 4. [Genomics & Metagenomics](#genomics--metagenomics)
 5. [Metabolic Modeling & Systems Biology](#metabolic-modeling--systems-biology)
 6. [Phage Biology & Viromics](#phage-biology--viromics)
@@ -54,7 +54,7 @@
 
 ---
 
-## Protein-Ligand Docking & Binding Affinity
+## Molecular Docking & Binding Affinity
 
 | Model | Description | Access | Notes |
 |-------|-------------|--------|-------|
