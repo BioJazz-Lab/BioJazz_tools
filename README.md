@@ -71,7 +71,7 @@
 |-------|-------------|--------|-------|
 | **Nucleotide Transformer (NT)** | DNA language models (500M–2.5B) for genomic sequences | [GitHub](https://github.com/instadeepai/nucleotide-transformer) / [HuggingFace](https://huggingface.co/InstaDeepAI) | Broad genomic tasks: variant effect, regulatory elements |
 | **DNABERT-2** | Multi-species DNA foundation model | [GitHub](https://github.com/Zhihan1996/DNABERT-2) | Better than DNABERT-1; tokenization improvements |
-| **Evo** | DNA language model trained on prokaryote/phage genomes | [GitHub](https://github.com/EvolutionaryScale/evo) | Particularly relevant for phage-host research |
+| **Evo2** | DNA language model (7B & 40B params) trained on 9.3 trillion nucleotides across all domains of life; prokaryote, phage, and eukaryote genomes | [GitHub](https://github.com/arcinstitute/evo2) | Arc Institute + NVIDIA; particularly relevant for phage-host research |
 | **HyenaDNA** | Long-range DNA model (up to 1M context) | [GitHub](https://github.com/HazyResearch/hyena-dna) | Long genomic context; efficient architecture |
 | **Caduceus** | Bidirectional, long-range DNA model | [GitHub](https://github.com/kuleshov-group/caduceus) | State-space model; strong on genomic benchmarks |
 | **MMseqs2** | Ultra-fast many-against-many protein/nucleotide sequence search and clustering | [GitHub](https://github.com/soedinglab/MMseqs2) | Essential for large-scale homology search and metagenomic annotation; orders of magnitude faster than BLAST |
@@ -108,7 +108,7 @@
 | **VIBRANT** | Virus identification and annotation | [GitHub](https://github.com/AnantharamanLab/VIBRANT) | Good for viral metabolic annotation |
 | **CheckV** | Quality assessment of viral genomes | [GitHub](https://github.com/apcamargo/checkv) | Essential QC before downstream analysis |
 | **PhageAI** | Phage lifecycle AI platform | [PhageAI](https://phage.ai) | Commercial; useful for classification |
-| **Evo (phage-tuned)** | Generative model for phage sequence design | [GitHub](https://github.com/EvolutionaryScale/evo) | Novel phage protein design |
+| **Evo2 (phage-tuned)** | Generative model for phage and viral sequence design; zero-shot functional sequence generation | [GitHub](https://github.com/arcinstitute/evo2) | Arc Institute + NVIDIA; strong zero-shot generalization to phage proteins |
 
 ---
 
