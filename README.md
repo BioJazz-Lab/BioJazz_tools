@@ -75,6 +75,7 @@
 | **HyenaDNA** | Long-range DNA model (up to 1M context) | [GitHub](https://github.com/HazyResearch/hyena-dna) | Long genomic context; efficient architecture |
 | **Caduceus** | Bidirectional, long-range DNA model | [GitHub](https://github.com/kuleshov-group/caduceus) | State-space model; strong on genomic benchmarks |
 | **MMseqs2** | Ultra-fast many-against-many protein/nucleotide sequence search and clustering | [GitHub](https://github.com/soedinglab/MMseqs2) | Essential for large-scale homology search and metagenomic annotation; orders of magnitude faster than BLAST |
+| **MMseqs2-GPU** | GPU-accelerated MMseqs2 for massive-scale sequence search and clustering | [GitHub](https://github.com/soedinglab/MMseqs2) | Same interface as MMseqs2; dramatically faster on GPU nodes; ideal for HPC metagenomics workflows |
 | **GenoME** | Metagenomic classification and embedding | — | Useful for microbiome studies |
 | **DeepMicro** | Deep learning for microbiome phenotype prediction | [GitHub](https://github.com/minoh0201/DeepMicro) | Relevant for eco-evolutionary microbiome work |
 
@@ -89,6 +90,7 @@
 | **UniKP** | Unified enzyme kinetics prediction (kcat, Km, Ki) | [GitHub](https://github.com/Luo-SynBioLab/UniKP) | Broader than DLKcat |
 | **TurNuP / NNKD** | kcat/Km prediction from sequence + substrate | — | Alternative kinetics tools |
 | **FluxML / COBRA.py** | Constraint-based metabolic modeling frameworks | [GitHub](https://github.com/opencobra/cobrapy) | Core tools for genome-scale metabolic models |
+| **gpuGEM** | GPU-accelerated linear optimization for genome-scale metabolic models via NVIDIA cuOpt | [arXiv](https://arxiv.org/abs/2610.24106) | 1.1–94× faster than HiGHS; MIT-licensed; `pip install gpugem`; requires Volta+ GPU, CUDA 12, cuOpt 26.6+ |
 | **GEM-PRO** | Structure-aware GEM construction | [GitHub](https://github.com/SBRG/GEM-PRO) | Links protein structure to metabolic models |
 | **AutoML-GEM** | ML-guided GEM refinement | — | Gap-filling and curation |
 | **DeepEC** | EC number prediction from sequence | [GitHub](https://github.com/kaistsystemsbiology/DeepEC) | Useful for annotating metabolic genes |
