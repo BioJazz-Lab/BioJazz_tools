@@ -86,6 +86,7 @@
 |-------|-------------|--------|-------|
 | **DiffDock** | Diffusion-based protein–ligand docking | [GitHub](https://github.com/gcorso/DiffDock) | State-of-the-art blind docking; relevant for enzyme–metabolite interactions |
 | **DiffDock-Glide** | DiffDock pose sampling combined with Schrödinger Glide scoring for improved accuracy | [GitHub](https://github.com/gcorso/DiffDock) | Hybrid approach; Glide rescoring improves pose selection |
+| **SurfDock** | Surface-informed diffusion model for protein–ligand complex prediction; uses molecular surface geometry to guide pose sampling | [GitHub](https://github.com/CAODH/SurfDock) / [Nature Methods](https://www.nature.com/articles/s41592-024-02516-y) | Published Nature Methods 2024; strong blind docking benchmark performance |
 | **AQAffinity** | Structure-free binding affinity prediction built on OpenFold3 (SandboxAQ) | [SandboxAQ](https://www.sandboxaq.com/aqaffinity) / [Docs](https://docs.aisim.sandboxaq.com/aqaffinity) | High-speed drug potency prediction without requiring a solved structure; 2026 |
 
 ---
