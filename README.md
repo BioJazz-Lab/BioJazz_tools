@@ -25,7 +25,6 @@
 | Model | Description | Access | Notes |
 |-------|-------------|--------|-------|
 | **AlphaFold3** | Structure prediction for proteins, DNA, RNA, ligands, ions | [AlphaFold Server](https://alphafoldserver.com) / [GitHub](https://github.com/google-deepmind/alphafold3) | Best for single-chain and complex structures; supports PTMs |
-| **AlphaFold2** | Protein monomer/multimer structure prediction | [ColabFold](https://colab.research.google.com/github/sokrypton/ColabFold/) / [GitHub](https://github.com/google-deepmind/alphafold) | Production-grade; ColabFold is fast alternative |
 | **OpenFold3** | Open-source community reimplementation of AlphaFold3 (permissive license) | [GitHub](https://github.com/aqlaboratory/openfold) | Enables training and fine-tuning; basis for AQAffinity |
 | **RomeroLab/lightning-boltz** | PyTorch Lightning training framework for Boltz-1/2; biomolecular structure prediction | [GitHub](https://github.com/RomeroLab/lightning-boltz) | MIT-licensed; strong AlphaFold3 alternative for proteins, DNA, RNA, small molecules |
 | **ESMC (ESM Cambrian)** | Protein language model (300M & 600M params); sequence representation, function prediction, embeddings | [GitHub](https://github.com/evolutionaryscale/esm) / [HuggingFace](https://huggingface.co/EvolutionaryScale) | Successor to ESM-2; Dec 2024; no MSA needed; strong zero-shot function annotation |
