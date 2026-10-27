@@ -8,7 +8,7 @@
 
 ## Table of Contents
 
-1. [Protein Structure Prediction](#protein-structure-prediction)
+1. [Protein Modeling & Design](#protein-modeling--design)
 2. [Molecular Dynamics & Conformational Sampling](#molecular-dynamics--conformational-sampling)
 3. [Protein-Ligand Docking & Binding Affinity](#protein-ligand-docking--binding-affinity)
 4. [Genomics & Metagenomics](#genomics--metagenomics)
@@ -20,7 +20,7 @@
 
 ---
 
-## Protein Structure Prediction
+## Protein Modeling & Design
 
 | Model | Description | Access | Notes |
 |-------|-------------|--------|-------|
