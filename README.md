@@ -1,7 +1,7 @@
 # AI Models and Modeling Tools for BioJazz Lab
 
 **Maintained by:** BioJazz Lab, Department of Biology, Baylor University  
-**Last updated:** 2026-10-27  
+**Last updated:** 2026-11-18  
 **Purpose:** Track AI/ML models relevant to BioJazz Lab research — phage-host interactions, genome-scale metabolic modeling, PTM-driven biomolecular assembly, and multi-scale eco-evolutionary dynamics.
 
 ---
@@ -49,6 +49,7 @@
 |-------|-------------|--------|-------|
 | **ConforNets** | Latent-based conformational control built on OpenFold3; generates and steers protein conformational ensembles | [GitHub](https://github.com/aqlaboratory/confornets) / [arXiv](https://arxiv.org/abs/2604.18559) | From aqlaboratory (OpenFold3 team); 2026 |
 | **BioEmu2** | Microsoft generative model for protein equilibrium conformational ensemble emulation | [GitHub](https://github.com/microsoft/bioemu) / [HuggingFace](https://huggingface.co/microsoft/bioemu2) | Replaces costly MD simulations for ensemble generation; thermodynamically grounded |
+| **SO3LR** | Pretrained machine-learned force field for (bio)molecular MD: SO3krates network for semi-local interactions plus physical long-range electrostatics, dispersion, and short-range repulsion | [GitHub](https://github.com/general-molecular-simulations/so3lr) / [Docs](https://so3lr.github.io/) / [JACS 2025](https://doi.org/10.1021/jacs.5c09558) | JAX-based; ASE calculator + CLI for NVT/NPT MD; Tauri models cover H–At (2026 preprint); code MIT, Tauri weights CC BY-NC 4.0 |
 | **yesint/molar** | Rust + Python library for high-performance reading and analysis of MD trajectories | [GitHub](https://github.com/yesint/molar) / [Docs](https://docs.rs/molar) | Supports GROMACS, AMBER formats; fast alternative to MDAnalysis for large trajectories |
 | **David-OConnor/dynamics** | Rust-based molecular dynamics simulation engine | [GitHub](https://github.com/David-OConnor/dynamics) / [Docs](https://docs.rs/dynamics) | Lightweight MD library; useful for custom simulation workflows |
 
